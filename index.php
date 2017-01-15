@@ -45,10 +45,10 @@ __EOS__
     // redirect to OAuth2 authorization endpoint
     $params = [
         'response_type' => 'code',
-        'client_id' => $clientId,
-        'redirect_uri' => sprintf('http://%s:%d/callback', $request->getServerParams()['SERVER_NAME'], $request->getServerParams()['SERVER_PORT']),
-        'scope' => 'notify',
-        'state' => hash('sha512', session_id()),
+        'client_id'     => $clientId,
+        'redirect_uri'  => sprintf('http://%s:%d/callback', $request->getServerParams()['SERVER_NAME'], $request->getServerParams()['SERVER_PORT']),
+        'scope'         => 'notify',
+        'state'         => hash('sha512', session_id()),
         'response_mode' => 'form_post',
     ];
     return $response->withStatus(302)->withHeader('Location', 'https://notify-bot.line.me/oauth/authorize?' . http_build_query($params));
