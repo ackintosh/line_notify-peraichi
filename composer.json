@@ -1,0 +1,7 @@
+{
+  "require": {
+    "guzzlehttp/guzzle": "*",
+    "league/route": "*",
+    "zendframework/zend-diactoros": "*"
+  }
+}
