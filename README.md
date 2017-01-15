@@ -15,7 +15,7 @@ export LINE_NOTIFY_CLIENT_ID="XXX"; export LINE_NOTIFY_CLIENT_SECRET="XXX";  php
 
 ## Pages
 
-### /
+### `/`
 
 #### Redirect to LINE login
 
@@ -28,11 +28,11 @@ After authentication, it will be transferred to the `/callback`.
 ![authorized](./images/authorized.png)
 
 
-### /callback
+### `/callback`
 
 ![callback](./images/callback.png)
 
-### /notify
+### `/notify`
 
 ![notify](./images/notify.png)
 
